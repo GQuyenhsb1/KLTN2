@@ -1,0 +1,327 @@
+.home {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E7D32; /* Green */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    color: #2E7D32;
+  }
+  
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  color: white;
+}
+
+/* Lớp phủ tối cho riêng hero-section */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.484); /* độ tối vừa phải */
+  z-index: 1;
+}
+
+/* Đảm bảo nội dung nằm trên lớp phủ */
+.hero-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+  
+  .hero-left {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .charac-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero-right {
+    flex: 1;
+    text-align: left;
+    margin-right: 30%;
+  }
+  
+  .hero-title {
+    font-size: 68px;
+    font-weight: bold;
+    color: #8cff92;
+    margin: 0;
+  }
+  
+  .hero-tagline {
+    font-size: 24px;
+    color: #8cff92;
+    margin: 10px 0 20px;
+    font-family: 'Great Vibes';
+  }
+  
+  .get-started-button {
+    background-color: #FF5722; 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .get-started-button:hover {
+    background-color: #E64A19;
+  }
+  
+  /* Features Section */
+  .features-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10px;
+    background-color: #FFF9C4; /* Light yellow */
+  }
+  
+  .feature-card {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card h3 {
+    font-size: 20px;
+    color: #2E7D32;
+    margin: 10px 0;
+  }
+  
+  .feature-card p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Existing Functionality Styles */
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: 100%;
+    background: rgb(255, 250, 235);
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card {
+    border-radius: 0px 0px 19px 19px;
+  }
+  
+  .title {
+    width: 97.5%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid rgba(16, 86, 82, 0.75);
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .section {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .section span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .section p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  hr {
+    height: 1px;
+    background-color: rgba(16, 86, 82, 0.75);
+    border: none;
+  }
+  
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 10px;
+    padding: 0px;
+  }
+  
+  .input_field {
+    width: auto;
+    height: 36px;
+    padding: 0 0 0 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(16, 86, 82);
+    background-color: rgb(251, 243, 228);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  .input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px rgb(251, 243, 228);
+    background-color: rgb(201, 193, 178);
+  }
+  
+  .form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+    width: 100%;
+    height: 36px;
+    background: rgba(16, 86, 82, 0.75);
+    box-shadow: 0px 0.5px 0.5px #F3D2C9, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+    border-radius: 5px;
+    border: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+  
+  .notifications ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notifications li {
+    margin-bottom: 10px;
+  }
+  
+  .notifications a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .notifications a:hover {
+    text-decoration: underline;
+  }
+  
+  .project-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-list li {
+    margin-bottom: 10px;
+  }
+  
+  .project-list a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .project-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .clear-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+    width: 100%;
+    height: 36px;
+    background: rgba(255, 99, 71, 0.75);
+    box-shadow: 0px 0.5px 0.5px #F3D2C9, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+    border-radius: 5px;
+    border: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
